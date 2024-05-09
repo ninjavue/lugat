@@ -1,0 +1,113 @@
+.modal-close{
+    padding:4px;
+    border: opx;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 28px;
+    &:hover{
+        color: rgb(0, 102, 255);
+    }
+}
+
+.title{
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.button-22 {
+  align-items: center;
+  background-color: blue;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 50px;
+  text-align: center;
+  width: 180px;
+  height: 150px;
+}
+.fz-50{
+    font-size: 50px;
+}
+.button-22.active {
+  background-color: blue;
+}
+
+.button-22:hover {
+  background-color: blue;
+}
+
+@media (max-width: 560px) {
+    .button-22 {
+        width: 250px;
+    }
+}
+@media (max-width: 510px) {
+    .button-22 {
+        width: 230px;
+    }
+}
+@media (max-width: 480px) {
+    .button-22 {
+        width: 210px;
+    }
+}
+@media (max-width: 440px) {
+    .button-22 {
+        width: 200px;
+    }
+}
+@media (max-width: 420px) {
+    .button-22 {
+        width: 190px;
+    }
+}
+@media (max-width: 400px) {
+    .button-22 {
+        width: 180px;
+    }
+}
+@media (max-width: 380px) {
+    .button-22 {
+        width: 170px;
+    }
+}
+@media (max-width: 360px) {
+    .button-22 {
+        width: 160px;
+    }
+}
+@media (max-width: 340px) {
+    .button-22 {
+        width: 150px;
+    }
+}
+@media (max-width: 315px) {
+    .button-22 {
+        width: 140px;
+    }
+}
+@media (max-width: 295px) {
+    .button-22 {
+        width: 130px;
+    }
+}
+@media (max-width: 275px) {
+    .button-22 {
+        width: 100%;
+    }
+}

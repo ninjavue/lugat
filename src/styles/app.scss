@@ -1,0 +1,32 @@
+.vc-container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.col-4{
+    width: 25%;
+}
+
+@media (max-width:600px) {
+    .vc-container{
+        max-width: 98%;
+    }
+}
