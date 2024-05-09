@@ -16,7 +16,7 @@
     <button class="modal-close" @click="showModal = false">
       <i class="fa-regular fa-circle-xmark"></i>
     </button>
-    <VaForm @submit.prevent="handleSubmit" class="mb-2 flex flex-col gap-2">
+    <VaForm @submit.prevent="handleSubmit" class="mt-10 mb-2 flex flex-col gap-2">
       <VaInput label="New Dagree" v-model="newDagree.title" required />
       <VaButton type="submit">Kiritish</VaButton>
     </VaForm>

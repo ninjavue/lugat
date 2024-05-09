@@ -5,7 +5,7 @@
       <VaButton round color="success" @click="isShow = !isShow">
         <i class="fa-solid fa-arrow-down-up-lock"></i>
       </VaButton>
-      <VaButton @click="this.$router.go(-1)">Orqaga</VaButton>
+      <VaButton v-if="tests.length<4" @click="this.$router.go(-1)">Orqaga</VaButton>
     </div>
     <VaForm
       v-if="isShow"
@@ -38,6 +38,10 @@
         </div>
       </div>
     </div>
+    <div v-if="tests.length>4" class="d-flex justify-between align-center">
+        <VaButton @click="this.$router.go(-1)">Orqaga</VaButton>
+    <VaButton @click="nextPage">Testni boshlash</VaButton>
+    </div>
   </div>
 </template>
 
@@ -49,9 +53,9 @@ export default {
       id: "",
       isShow: false,
       vokable:{
-            de: "",
-            uz: "",
-            lektionId: ""
+        de: "",
+        uz: "",
+        lektionId: ""
       },
       isUpdated: false
     };
@@ -80,6 +84,9 @@ export default {
         this.isUpdated = true
         this.vokable = data
         this.isShow = true
+    },
+    nextPage(){
+        window.location.href = `/tester/${this.title}/${this.id}`
     }
   },
   mounted() {
